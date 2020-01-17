@@ -72,6 +72,12 @@ controller.baudrate = 9600
 KEY_U = 0x16
 KEY_D = 0x20
 
+KEY_Q = 0x10
+KEY_W = 0x11
+KEY_E = 0x12
+KEY_R = 0x13
+KEY_T = 0x14
+
 while True:
 	input = controller.read(1)
 	if input == b"U":
@@ -82,3 +88,24 @@ while True:
 		press_key(KEY_D)
 	elif input == b"d":
 		release_key(KEY_D)
+	elif input == b"Q":
+		press_key(KEY_Q)
+	elif input == b"q":
+		release_key(KEY_Q)
+	elif input == b"W":
+		press_key(KEY_W)
+	elif input == b"w":
+		release_key(KEY_W)
+	elif input == b"E":
+		press_key(KEY_E)
+	elif input == b"e":
+		release_key(KEY_E)
+	elif input == b"R":
+		press_key(KEY_R)
+	elif input == b"r":
+		press_key(KEY_R)
+	elif input == b"T":
+		press_key(KEY_T)
+	elif input == b"t":
+		release_key(KEY_t)
+

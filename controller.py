@@ -4,7 +4,7 @@
 import serial
 import sys
 import io
-
+import time
 import os
 import ctypes
 import win32api
@@ -79,33 +79,34 @@ KEY_R = 0x13
 KEY_T = 0x14
 
 while True:
-	input = controller.read(1)
-	if input == b"U":
-		press_key(KEY_U)
-	elif input == b"u":
-		release_key(KEY_U)
-	elif input == b"D":
-		press_key(KEY_D)
-	elif input == b"d":
-		release_key(KEY_D)
-	elif input == b"Q":
-		press_key(KEY_Q)
-	elif input == b"q":
-		release_key(KEY_Q)
-	elif input == b"W":
-		press_key(KEY_W)
-	elif input == b"w":
-		release_key(KEY_W)
-	elif input == b"E":
-		press_key(KEY_E)
-	elif input == b"e":
-		release_key(KEY_E)
-	elif input == b"R":
-		press_key(KEY_R)
-	elif input == b"r":
-		press_key(KEY_R)
-	elif input == b"T":
-		press_key(KEY_T)
-	elif input == b"t":
-		release_key(KEY_T)
-
+   input = controller.read(1)
+   if input == b"U":
+      press_key(KEY_U)
+   elif input == b"u":
+      release_key(KEY_U)
+   elif input == b"D":
+      press_key(KEY_D)
+   elif input == b"d":
+      release_key(KEY_D)
+   elif input == b"Q":
+      press_key(KEY_Q)
+   elif input == b"q":
+      release_key(KEY_Q)
+   elif input == b"W":
+      press_key(KEY_W)
+   elif input == b"w":
+      release_key(KEY_W)
+   elif input == b"E":
+      press_key(KEY_E)
+   elif input == b"e":
+      release_key(KEY_E)
+   elif input == b"R":
+      press_key(KEY_R)
+   elif input == b"r":
+      release_key(KEY_R)
+   elif input == b"T":
+      press_key(KEY_T)
+   elif input == b"t":
+      release_key(KEY_T)
+   time.sleep(0.010)
+   

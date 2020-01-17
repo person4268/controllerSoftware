@@ -107,5 +107,5 @@ while True:
 	elif input == b"T":
 		press_key(KEY_T)
 	elif input == b"t":
-		release_key(KEY_t)
+		release_key(KEY_T)
 

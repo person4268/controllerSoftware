@@ -1,5 +1,4 @@
 # Is this how they work? I'm just manually typing this
 
 pywin32
-win32api
 pyserial

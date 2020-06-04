@@ -1,6 +1,3 @@
-# As much as I hate windows, this is windows only
-# Mostly because I couldn't find a way to get games to pick up the inputs
-
 import serial
 import sys
 import io
